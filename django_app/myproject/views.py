@@ -17,3 +17,4 @@ def page3(request):
 
 def page4(request):
     return render(request, 'myproject/contacts.html')
+

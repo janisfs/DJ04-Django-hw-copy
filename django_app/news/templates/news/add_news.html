@@ -1,0 +1,22 @@
+{% extends 'myproject/base.html' %}
+
+{% block title %}
+   Добавление новости
+{% endblock %}
+
+{% block content %}
+<h1 style="margin: 20px;">Добавление новости</h1>
+<div>
+    <h2>Форма для добавления новости</h2>
+    <form method="post">
+        <input type="text" placeholder="Заголовок" name="title">
+        <input type="text" placeholder="Краткое описание" name="short_description">
+        <textarea name="text" placeholder="Текст новости"></textarea>
+        <input type="date" name="pub_date">
+        <input type="text" placeholder="Автор" name="author">
+        <button type="submit">Добавить новость</button>
+
+    </form>
+</div>
+
+{% endblock %}

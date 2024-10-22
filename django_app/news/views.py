@@ -5,3 +5,6 @@ from .models import News_post
 def news_home(request):
     news = News_post.objects.all() # Получаем все новости из базы данных
     return render(request, 'news/news_home.html', {'news': news})  # путь к файлу шаблона
+
+def add_news(request):
+    return render(request, 'news/add_news.html', )
