@@ -5,18 +5,32 @@
 {% endblock %}
 
 {% block content %}
-<h1 style="margin: 20px;">Добавление новости</h1>
 <div>
     <h2>Форма для добавления новости</h2>
     <form method="post">
-        <input type="text" placeholder="Заголовок" name="title">
-        <input type="text" placeholder="Краткое описание" name="short_description">
-        <textarea name="text" placeholder="Текст новости"></textarea>
-        <input type="date" name="pub_date">
-        <input type="text" placeholder="Автор" name="author">
-        <button type="submit">Добавить новость</button>
-
+        <div class="form-group">
+            <label for="title">Заголовок</label>
+            <input type="text" class="form-control" id="title" name="title" placeholder="Заголовок">
+        </div>
+        <div class="form-group">
+            <label for="short_description">Краткое описание</label>
+            <input type="text" class="form-control" id="short_description" name="short_description" placeholder="Краткое описание">
+        </div>
+        <div class="form-group">
+            <label for="text">Текст новости</label>
+            <textarea class="form-control" id="text" name="text" placeholder="Текст новости"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="pub_date">Дата публикации</label>
+            <input type="date" class="form-control" id="pub_date" name="pub_date">
+        </div>
+        <div class="form-group">
+            <label for="author">Автор</label>
+            <input type="text" class="form-control" id="author" name="author" placeholder="Автор">
+        </div>
+        <button type="submit" class="btn btn-primary">Добавить новость</button>
     </form>
+    <br>
 </div>
 
 {% endblock %}
